@@ -12,7 +12,7 @@ const App = () => {
       <Header />
       <main className="pt-16 pb-24">
         <Home />
-        {/* <About />
+        <About />{/* 
         <Projects />
         <Contact /> */}
       </main>
