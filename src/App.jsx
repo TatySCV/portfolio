@@ -10,11 +10,11 @@ const App = () => {
   return (
     <>
       <Header />
-      <main className="pt-16 pb-24">
-        <Home />
-        <About />{/* 
+      <main className="pt-16 pb-24 sticky">
+         <Home />
+        <About />
         <Projects />
-        <Contact /> */}
+        <Contact /> 
       </main>
       <Footer />
     </>

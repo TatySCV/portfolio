@@ -6,7 +6,7 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import TimelineDot from '@mui/lab/TimelineDot';
 import Typography from '@mui/material/Typography';
-import { FaReact, FaPython, FaDatabase, FaGithub, FaLinkedin, FaEnvelope, FaAndroid, FaPhp } from 'react-icons/fa'; // Asegúrate de tener los iconos necesarios
+import { FaReact, FaPython, FaDatabase, FaGithub, FaLinkedin, FaAndroid, FaPhp } from 'react-icons/fa'; // Asegúrate de tener los iconos necesarios
 
 const experiences = [
   {
