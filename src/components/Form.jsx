@@ -40,7 +40,7 @@ const Contact = () => {
         {isSent ? (
           <p className="text-center text-purple-500">¡Mensaje enviado con éxito!</p>
         ) : (
-          <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
+          <form onSubmit={handleSubmit} className="max-w-md mx-auto p-0 bg-black rounded-lg shadow-lg">
             <div className="mb-4">
               <label htmlFor="name" className="block text-sm font-semibold mb-2">Nombre</label>
               <input
@@ -50,7 +50,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="w-full p-3 bg-black text-white border border-purple-600 rounded"
+                className="w-full p-3 bg-black text-white border border-purple-600 rounded focus:outline-none focus:border-purple-500"
               />
             </div>
             <div className="mb-4">
@@ -62,7 +62,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="w-full p-3 bg-black text-white border border-purple-600 rounded"
+                className="w-full p-3 bg-black text-white border border-purple-600 rounded focus:outline-none focus:border-purple-500"
               />
             </div>
             <div className="mb-4">
@@ -73,12 +73,12 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                className="w-full p-3 bg-black text-white border border-purple-600 rounded"
+                className="w-full p-3 bg-black text-white border border-purple-600 rounded focus:outline-none focus:border-purple-500"
               ></textarea>
             </div>
             <button
               type="submit"
-              className="bg-purple-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-purple-500 transition duration-300"
+              className="w-full bg-purple-600 text-white px-6 py-3 rounded-full shadow-lg hover:bg-purple-500 transition duration-300"
             >
               Enviar Mensaje
             </button>

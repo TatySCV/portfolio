@@ -46,14 +46,21 @@ const TitleContent = styled(CardContent)(({ theme }) => ({
 }));
 
 const ProjectCard = ({ title, description }) => {
-
   return (
-    <HoverCard variant="outlined" style={{ width: 300, height: 200 }}>
+    <HoverCard
+      variant="outlined"
+      sx={{ 
+        width: { xs: '100%', sm: 300 }, 
+        height: { xs: 150, sm: 200 },
+        margin: 'auto',
+        borderRadius: 2,
+      }}
+    >
       <TitleContent>
-        <Typography variant="h6">{title}</Typography>
+        <Typography variant="h6" align="center">{title}</Typography>
       </TitleContent>
       <HoverContent>
-        <Typography variant="body2">{description}</Typography>
+        <Typography variant="body2" align="center">{description}</Typography>
       </HoverContent>
     </HoverCard>
   );

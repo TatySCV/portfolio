@@ -16,31 +16,42 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-black text-white">
+    <section id="contact" className="py-10 md:py-20 bg-black text-white">
       <div className="container mx-auto px-4">
-        {/* <h2 className="text-4xl font-bold text-center text-purple-500 mb-12">Contacto</h2> */}
+        {/* Título */}
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-purple-500 mb-5 md:mb-5">Contacto</h2>
         <div className="flex flex-col md:flex-row md:gap-12">
           {/* Formulario de Contacto */}
-          <div className="flex-1">
-            <Typography variant="h5" className="text-purple-400 mb-4">Envíame un Mensaje</Typography>
+          <div className="flex-1 mb-5 md:mb-0">
+            <Typography variant="h5" className="text-purple-400 mb-0">
+              Envíame un Mensaje
+            </Typography>
             <Form />
           </div>
 
           {/* Información de Contacto */}
           <div className="flex-1 flex flex-col items-center justify-center">
-            <Typography variant="h5" className="text-purple-400 mb-4">Información de Contacto</Typography>
+            <Typography variant="h5" className="text-purple-400 mb-4">
+              Información de Contacto
+            </Typography>
             <div className="flex flex-col space-y-4 items-center">
               <div className="flex items-center space-x-2">
                 <FaEnvelope className="text-purple-500" />
-                <a href="mailto:tcampos.dev@gmail.com" className="hover:text-purple-400">tcampos.dev@gmail.com</a>
+                <a href="mailto:tcampos.dev@gmail.com" className="hover:text-purple-400">
+                  tcampos.dev@gmail.com
+                </a>
               </div>
               <div className="flex items-center space-x-2">
                 <FaGithub className="text-purple-500" />
-                <a href="https://github.com/TatySCV" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400">GitHub</a>
+                <a href="https://github.com/TatySCV" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400">
+                  GitHub
+                </a>
               </div>
               <div className="flex items-center space-x-2">
                 <FaLinkedin className="text-purple-500" />
-                <a href="https://www.linkedin.com/in/TatySCV" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400">LinkedIn</a>
+                <a href="https://www.linkedin.com/in/TatySCV" target="_blank" rel="noopener noreferrer" className="hover:text-purple-400">
+                  LinkedIn
+                </a>
               </div>
             </div>
           </div>

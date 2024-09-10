@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaHome, FaUser, FaProjectDiagram, FaEnvelope } from 'react-icons/fa';
 
 const Header = () => {
   return (
@@ -7,22 +8,36 @@ const Header = () => {
         <a href="#home" className="text-2xl font-bold text-purple-800 flex items-center space-x-2">
           <span>TSCV</span>
         </a>
-        <div className="flex items-center space-x-12">
+        <div className="hidden md:flex items-center space-x-12">
           <a href="#home" className="flex items-center space-x-1 hover:text-purple-400 text-sm">
-            <i className="fas fa-home"></i>
+            <FaHome />
             <span>Inicio</span>
           </a>
           <a href="#about" className="flex items-center space-x-1 hover:text-purple-400 text-sm">
-            <i className="fas fa-user"></i>
+            <FaUser />
             <span>Sobre Mí</span>
           </a>
           <a href="#projects" className="flex items-center space-x-1 hover:text-purple-400 text-sm">
-            <i className="fas fa-project-diagram"></i>
+            <FaProjectDiagram />
             <span>Proyectos</span>
           </a>
           <a href="#contact" className="flex items-center space-x-1 hover:text-purple-400 text-sm">
-            <i className="fas fa-envelope"></i>
+            <FaEnvelope />
             <span>Contacto</span>
+          </a>
+        </div>
+        <div className="md:hidden flex items-center space-x-4">
+          <a href="#home" className="hover:text-purple-400">
+            <FaHome />
+          </a>
+          <a href="#about" className="hover:text-purple-400">
+            <FaUser />
+          </a>
+          <a href="#projects" className="hover:text-purple-400">
+            <FaProjectDiagram />
+          </a>
+          <a href="#contact" className="hover:text-purple-400">
+            <FaEnvelope />
           </a>
         </div>
       </nav>
