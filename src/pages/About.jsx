@@ -1,6 +1,12 @@
 import React from 'react';
-import { FaReact, FaPython, FaDatabase, FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa'; // Iconos para habilidades
 import TimeLine from '../components/TimeLine';
+import Stack from '../components/Stack';
+
+const backEndSkills = ['Python', 'Django', 'IA', 'Java', 'Java Android', 'PHP', 'Laravel'];
+const frontEndSkills = ['React', 'HTML', 'CSS', 'Tailwind', 'JavaScript'];
+const dbSkills = ['MySQL', 'SQL', 'MongoDB', 'Power BI', 'Firebase'];
+const cloudSkills = ['AWS EC2', 'AWS RDS', 'AWS Amplify', 'AWS Route 53'];
+const toolsSkills = ['GitHub', 'Yolo', 'Pentaho', 'VS Code', 'Windows Server', 'macOS'];
 
 const About = () => {
   return (
@@ -14,28 +20,14 @@ const About = () => {
             <TimeLine />
           </div>
 
-          {/* Habilidades y Stack */}
+          {/* Carruseles de Habilidades */}
           <div>
-            {/* <h3 className="text-2xl font-semibold text-purple-400 mb-4">Habilidades y Stack</h3>
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
-                <FaReact className="text-purple-500 text-4xl mb-4 mx-auto" />
-                <h4 className="text-lg font-semibold text-purple-400">React</h4>
-                <p>Experiencia con React y Vite.</p>
-              </div>
-              <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
-                <FaPython className="text-purple-500 text-4xl mb-4 mx-auto" />
-                <h4 className="text-lg font-semibold text-purple-400">Python</h4>
-                <p>Conocimientos avanzados en Python y Django.</p>
-              </div>
-              <div className="bg-gray-800 p-6 rounded-lg shadow-lg text-center">
-                <FaDatabase className="text-purple-500 text-4xl mb-4 mx-auto" />
-                <h4 className="text-lg font-semibold text-purple-400">SQL</h4>
-                <p>Gestión de bases de datos con MySQL y PostgreSQL.</p>
-              </div>
-            </div> */}
+          <h3 className="text-2xl font-semibold text-purple-400 mb-4">Mis Habilidades</h3>            <Stack title="Back-End" skills={backEndSkills} />
+            <Stack title="Front-End" skills={frontEndSkills} />
+            <Stack title="Base de Datos" skills={dbSkills} />
+            <Stack title="Cloud & DevOps" skills={cloudSkills} />
+            <Stack title="Herramientas y Sistemas" skills={toolsSkills} />
           </div>
-
         </div>
       </div>
     </section>
