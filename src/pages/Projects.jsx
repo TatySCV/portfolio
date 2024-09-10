@@ -3,14 +3,29 @@ import ProjectCard from '../components/ProjectCard'; // Asegúrate de que la rut
 
 const projects = [
   {
-    title: 'Proyecto 1',
-    description: 'Descripción breve del proyecto 1.'
+    title: 'Portix - Sistema ANPR con IA',
+    description: 'Sistema de monitoreo de tránsito con cámaras de seguridad utilizando Inteligencia Artificial para la lectura de matrículas y el monitoreo en tiempo real.'
   },
   {
-    title: 'Proyecto 2',
-    description: 'Descripción breve del proyecto 2.'
+    title: 'Sistema de Gestión de Estadios',
+    description: 'Sistema web para la unidad de deporte de la Municipalidad de Curacautín que gestiona el estadio municipal, permitiendo la división de una cancha grande en varias canchas pequeñas y la gestión de horas de reserva para los usuarios.'
   },
-  // Agrega más proyectos aquí
+  {
+    title: 'Portafolio Personal',
+    description: 'Portafolio personal desarrollado en React para mostrar habilidades y proyectos, con funcionalidades como una sección de contacto utilizando EmailJS y un carrusel de habilidades.'
+  },
+  {
+    title: 'Aplicación de Traducción Mapudungun-Español',
+    description: 'Desarrollada para Android en Java, esta aplicación traduce entre los idiomas Mapudungun y Español, facilitando la comunicación y preservación del idioma Mapudungun.'
+  },
+  {
+    title: 'Aplicación de Inventario Android',
+    description: 'Sistema de gestión de inventario desarrollado en Java, permitiendo la administración eficiente de productos, control de stock y generación de reportes.'
+  },
+  {
+    title: 'Sistema de Gestión de Biblioteca',
+    description: 'Aplicación de escritorio en Java para la gestión de bibliotecas, incluyendo funcionalidades para la catalogación de libros, gestión de usuarios y seguimiento de préstamos.'
+  },
 ];
 
 const Projects = () => {
